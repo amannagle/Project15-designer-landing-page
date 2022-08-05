@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111111;
+    color: #ffffff;
+    font-family: "Montserrat",'serif';
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin: 30px 50px;
+}
+
+ul.nav-list{
+    margin-left: auto;
+    margin-right: 100px;
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    font-weight: 700;
+    color: #EBEBEB;
+    font-size: 17px;
+}
+section.main{
+    display: flex;
+}
+
+div.right{
+    align-self: center;
+}
+
+div.right>span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #eb303f;
+}
+
+div.right>h2{
+    font-size: 60px;
+}
+img.main-image{
+    height: 600px;
+    margin-top: -60px;
+    width: auto;
+    margin-left: 100px;
+}
+
+p.desc{
+    white-space: pre-line;
+    color: #b5b5b5;
+    font-size: 20px;
+}
+
+button.about-me{
+    margin-top: 50px;
+    width: 180px;
+    height: 60px;
+    background-color: #eb303f;
+    font-size: 20px;
+    color: #f7dfe1;
+}
+
+section.experience{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 200px;
+}
+
+div.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+div.achievement{
+    margin-top: 100px;
+    display: flex;
+}
+div.card>img{
+    width: 80px;
+}
+div.card{
+    padding: 50px 35px;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* box-sizing: 0 0 5px 5px #111111; */
+}
+div.card:nth-child(2)
+{
+    background-color: #eb303f;
+}
+
+div.card>h3{
+    font-size: 30px;
+}
+
+div.card>p{
+    font-size: 22px;
+    white-space: pre-line;
+}
+
+span.navigation{
+    align-items: center;
+    display: flex;
+    position: relative;
+    color: #eb303f;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    gap: 10px;
+}
+
+div.card:nth-child(2)>span.navigation{
+    color: #ffffff;
+}
