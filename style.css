@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #111111;
     color: #ffffff;
-    font-family: "Montserrat",'serif';
+    font-family: "Montserrat", 'serif';
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     margin: 30px 50px;
 }
 
-ul.nav-list{
+ul.nav-list {
     margin-left: auto;
     margin-right: 100px;
     display: flex;
@@ -28,37 +29,39 @@ ul.nav-list{
     color: #EBEBEB;
     font-size: 17px;
 }
-section.main{
+
+section.main {
     display: flex;
 }
 
-div.right{
+div.right {
     align-self: center;
 }
 
-div.right>span{
+div.right>span {
     font-size: 20px;
     font-weight: 600;
     color: #eb303f;
 }
 
-div.right>h2{
+div.right>h2 {
     font-size: 60px;
 }
-img.main-image{
+
+img.main-image {
     height: 600px;
     margin-top: -60px;
     width: auto;
     margin-left: 100px;
 }
 
-p.desc{
+p.desc {
     white-space: pre-line;
     color: #b5b5b5;
     font-size: 20px;
 }
 
-button.about-me{
+button.about-me {
     margin-top: 50px;
     width: 180px;
     height: 60px;
@@ -67,26 +70,24 @@ button.about-me{
     color: #f7dfe1;
 }
 
-section.experience{
+section.experience {
     display: flex;
     flex-direction: column;
     margin: 100px 200px;
 }
 
-div.cards{
+div.cards {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-div.achievement{
-    margin-top: 100px;
-    display: flex;
-}
-div.card>img{
+
+div.card>img {
     width: 80px;
 }
-div.card{
+
+div.card {
     padding: 50px 35px;
     background-color: #1e1e1e;
     display: flex;
@@ -94,21 +95,21 @@ div.card{
     gap: 25px;
     /* box-sizing: 0 0 5px 5px #111111; */
 }
-div.card:nth-child(2)
-{
+
+div.card:nth-child(2) {
     background-color: #eb303f;
 }
 
-div.card>h3{
+div.card>h3 {
     font-size: 30px;
 }
 
-div.card>p{
+div.card>p {
     font-size: 22px;
     white-space: pre-line;
 }
 
-span.navigation{
+span.navigation {
     align-items: center;
     display: flex;
     position: relative;
@@ -119,6 +120,215 @@ span.navigation{
     gap: 10px;
 }
 
-div.card:nth-child(2)>span.navigation{
+div.card:nth-child(2)>span.navigation {
     color: #ffffff;
+}
+
+div.achievement {
+    margin-top: 100px;
+    display: flex;
+    gap: 200px;
+}
+
+div.left-achievement {
+    align-self: center;
+}
+
+div.left-achievement>h3{
+    display: flex;
+    white-space: nowrap;
+    flex-direction: column;
+    font-size: 30px;
+}
+div.left-achievement>h3>span{
+    align-self: center;
+    color: #eb303f;
+    font-size: 100px;
+    font-weight: 700;
+}
+div.right-achievement {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+    gap: 10px;
+}
+
+div.achievement-card {
+    padding: 20px 50px;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.achievement-card>h3{
+    font-size: 60px;
+    color: #eb303f;
+    margin-bottom: 10px;
+}
+
+div.achievement-card>span{
+    font-size: 20px;
+    color: #9a9a9a;
+    margin-left: -20px;
+}
+
+section.featured{
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+div.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.header{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+div.btn{
+    margin: auto 0;
+}
+
+div.btn>button{
+    width: 180px;
+    height: 60px;
+    background-color: #eb303f;
+    color: #ffffff;
+    font-size: 18px;
+}
+div.header>h4{
+    font-size: 35px;
+}
+div.project-img>img{
+    width: 500px;
+    padding: 50px 20px;
+}
+div.project-cards{
+    margin-top: 100px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+div.project-img{
+    background-color: #1e1e1e;
+}
+
+div.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.project>h2,div.project>span{
+    align-self: flex-start;
+}
+
+div.project>h2{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+div.project>span{
+    display: flex;
+    margin-left:20px;
+    color: #eb303f;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 5px;
+}
+
+section.contact{
+    margin: 40px 200px;
+    display: flex;
+    background-color: #1e1e1e;
+    padding: 100px 100px;
+    gap: 200px;
+}
+
+div.contact-right{
+    align-self: center;
+}
+
+div.contact-left>h2{
+    font-size: 40px;
+    white-space: pre-line;
+}
+
+div.contact-left>p{
+    margin-top: 5px;
+    white-space: pre-line;
+    color: #b1b1b1;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+div.contact-right button{
+    width: 180px;
+    height: 60px;
+    background-color: #eb303f;
+    color: #ffffff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+}
+
+nav.bottom-nav > ul{
+    display: flex;
+    list-style-type: none;
+    margin: 100px auto;
+    font-size: 14px;
+    color: #f0f0f0;
+    gap: 40px;
+    text-transform: uppercase;
+}
+
+footer{
+    padding: 30px;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+}
+
+footer div.logo img{
+    margin-left: 100px;
+    height: 50px;
+}
+div.footer-nav{
+  margin-left: 400px;
+}
+div.footer-nav-list{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+div.footer-nav-list img{
+    height: 100px;
+}
+
+div.footer-nav-list i{
+    font-size: 30px;
+}
+
+div.bg{
+    position: absolute;
+    height: 1019px;
+    width: 800px;
+    z-index: -1;
+    background-color: #181818;
+    bottom: -971px;
+    left: 0px;
 }
