@@ -14,6 +14,7 @@ body {
 }
 
 nav {
+    position: relative;
     display: flex;
     align-items: center;
     margin: 30px 50px;
@@ -78,7 +79,7 @@ section.experience {
 
 div.cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
     gap: 20px;
 }
 
@@ -331,4 +332,150 @@ div.bg{
     background-color: #181818;
     bottom: -971px;
     left: 0px;
+}
+
+.hamburger{
+    display: none;
+    position: absolute;
+}
+
+@media(max-width:500px)
+{
+    nav{
+        padding: 0;
+        margin: 0;
+        margin: 10px 15px;
+    }
+    ul.nav-list{
+        display: none;
+    }
+    div.hamburger{
+        display: flex;
+        color: #eb303f;
+        top: 0.75rem;
+        font-size: 2rem;
+        right: 0px;
+    }
+    
+    section.main{
+        margin-top: 200px;
+        width: 90%;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    div.right{
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 30px;
+    }
+
+    div.right h2{
+     font-size: 30px;  
+    }
+
+    p.desc{
+        font-size: 22px;
+    }
+
+    button.about-me{
+        margin: 15px auto;
+        outline: none;
+        border: none;
+    }
+
+    section.experience{
+        margin: 0;
+        margin-top: 100px;
+    }
+
+    div.achievement {
+        flex-direction: column;
+    }
+
+    div.right-achievement {
+       display: flex;
+       flex-direction: column;
+        gap: 10px;
+    }
+
+    div.heading{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    div.heading button{
+        outline: none;
+        border: none;
+    }
+
+    div.project-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.project-img>img{
+        width: 250px;
+        padding: 50px 20px;
+    }
+
+    div.project{
+        align-items: flex-start;
+    }
+
+    section.contact{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin: 50px auto;
+        padding: 20px 100px;
+        align-items: center;
+        gap: 40px;
+    }
+
+    footer{
+       
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        padding: 20px 10px;
+        gap: 30px;
+    }
+
+    footer div.logo img{
+        margin-left: 0px;
+        height: 50px;
+    }
+    div.footer-nav{
+        margin-left: 0;
+    }
+
+    div.bg{
+        display: none;
+    }
+
+    html{
+        overflow-x: hidden;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    nav.bottom-nav > ul{
+        display: flex;
+        list-style-type: none;
+        margin: 100px auto;
+        font-size: 12px;
+        color: #f0f0f0;
+        gap: 25px;
+        text-transform: uppercase;
+    }
 }
